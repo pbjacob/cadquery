@@ -1,10 +1,13 @@
-from importlib.metadata import version, PackageNotFoundError
+# from importlib.metadata import version, PackageNotFoundError
 
-try:
-    __version__ = version("cadquery")
-except PackageNotFoundError:
-    # package is not installed
-    __version__ = "2.2-dev"
+# try:
+#     __version__ = version("cadquery")
+# except PackageNotFoundError:
+#     # package is not installed
+#     __version__ = "2.2-dev"
+
+
+__version__ = "2.2.0.b0"
 
 # these items point to the OCC implementation
 from .occ_impl.geom import Plane, BoundBox, Vector, Matrix, Location

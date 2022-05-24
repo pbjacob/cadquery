@@ -39,7 +39,8 @@ if not is_rtd and not is_appveyor and not is_azure:
 
 setup(
     name="cadquery",
-    use_scm_version=True,
+    use_scm_version=False,
+    version="2.2.0.b0",
     url="https://github.com/CadQuery/cadquery",
     license="Apache Public License 2.0",
     author="David Cowden",
